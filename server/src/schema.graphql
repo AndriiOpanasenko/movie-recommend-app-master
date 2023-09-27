@@ -1,0 +1,38 @@
+type Query {
+  movies(page: Int): Movies
+  moviesByIds(ids: [Int]): [Movie]
+}
+
+type Movies {
+  page: Int!
+  totalPages: Int!
+  totalResults: Int!
+  results: [Movie!]!
+}
+
+type Movie {
+  id: ID!
+  title: String!
+  originalTitle: String
+  releaseDate(format: String): String!
+  posterPath: String!
+  genres: [Genre]
+  adult: Boolean
+  overview: String
+  originalLanguage: String
+  backdropPath: String
+  popularity: Float
+  voteCount: Int
+  video: Boolean
+  voteAverage: Float
+  runtime: Int
+  budget: Int
+  revenue: Int
+  status: String
+  tagline: String
+}
+
+type Genre {
+  id: Int!
+  name: String
+}

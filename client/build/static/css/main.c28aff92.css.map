@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.c28aff92.css","mappings":"AAAA,iBACI,WACA,qBAGJ,wBACI,WACA","sources":["components/Navigation/nav.module.scss"],"sourcesContent":[".link {\r\n    color: #fff;\r\n    text-decoration: none;\r\n}\r\n\r\n.drawer_link {\r\n    color: #333;\r\n    text-decoration: none;\r\n}"],"names":[],"sourceRoot":""}
